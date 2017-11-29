@@ -6,11 +6,7 @@
     </div>
   </nav>
   <nav class="navbar navbar-expand navbar-light bg-light lower-nav">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div id="navbarResponsive">
         <ul class="navbar-nav mx-auto ">
           <li class="nav-item {% if page.url == "/" or page.url == "/index.html" %}active{% endif %}">
             <a class="nav-link" href="{{ site.url }}">Home
@@ -30,6 +26,5 @@
             <a class="nav-link" href="{{ site.url }}/contact/">Contact</a>
           </li>
         </ul>
-    </div>
   </nav>
 </header>

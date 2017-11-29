@@ -11,6 +11,10 @@
   -webkit-box-shadow: 0 -6px 25px 0px #999;
   -moz-box-shadow: 0 -6px 25px 0px #999;
   box-shadow: 0 -6px 25px 0px #999;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-item {
@@ -23,4 +27,20 @@ footer {
 
 header {
   margin-bottom: 20px;
+}
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%; 
+  z-index: 10;
+}
+
+a.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.25rem;
 }
