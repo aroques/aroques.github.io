@@ -1,0 +1,35 @@
+<header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light upper-nav">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="{{ site.url }}">aroques</a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand navbar-light bg-light lower-nav">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item {% if page.url == "/" or page.url == "/index.html" %}active{% endif %}">
+            <a class="nav-link" href="{{ site.url }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url contains "/blog/" %}active{% endif %}">
+            <a class="nav-link" href="{{ site.url }}/blog/">Blog</a>
+          </li>
+          <li class="nav-item {% if page.url contains "/portfolio/" %}active{% endif %}">
+            <a class="nav-link" href="{{ site.url }}/portfolio/">Portfolio</a>
+          </li>
+          <li class="nav-item {% if page.url contains "/about/" %}active{% endif %}">
+            <a class="nav-link" href="{{ site.url }}/about/">About</a>
+          </li>
+          <li class="nav-item {% if page.url contains "/contact/" %}active{% endif %}">
+            <a class="nav-link" href="{{ site.url }}/contact/">Contact</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+</header>

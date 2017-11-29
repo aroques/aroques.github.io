@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="row">
+
+  <!-- Blog Entries Column -->
+  <div class="offset-md-2 col-md-8">
+
+    <h1 class="my-4">Recent Posts</h1>
+    
+    <!-- Recent Posts -->
+    {% for post in site.posts %}
+    <div class="card mb-4">
+      <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p class="card-text">{{ post.excerpt }}</p>
+        <a href="{{ site.url }}{% post_url 2017-11-25-welcome-to-jekyll %}" class="btn btn-primary">Read More &rarr;</a>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on {{ post.date | date: "%B %d, %Y" }} by
+        <a href="#">Start Bootstrap</a>
+      </div>
+    </div>
+    {% endfor %}
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+      </li>
+    </ul>
+
+  </div>
+
+</div>
+<!-- /.row -->

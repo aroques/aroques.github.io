@@ -1,0 +1,26 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+.upper-nav {
+  z-index: 1; 
+}
+.lower-nav {
+  -webkit-box-shadow: 0 -6px 25px 0px #999;
+  -moz-box-shadow: 0 -6px 25px 0px #999;
+  box-shadow: 0 -6px 25px 0px #999;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+footer {
+  border-top: 1px solid rgba(0,0,0,0.125);
+}
+
+header {
+  margin-bottom: 20px;
+}

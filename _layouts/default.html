@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</html>
