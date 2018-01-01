@@ -17,7 +17,7 @@ title: Blog
       <div class="card-body">
         <h3 class="card-title">{{ post.title }}</h3>
         <p class="card-text">{{ post.excerpt }}</p>
-        <a href="{{ post.url }} class="btn btn-primary">Read More &rarr;</a>
+        <a href="{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
       </div>
       <div class="card-footer text-muted">
         Posted on {{ post.date | date: "%B %d, %Y" }} by
