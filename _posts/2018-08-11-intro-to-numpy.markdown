@@ -29,7 +29,6 @@ a + b
 
 
 
-
 ```python
 output = []
 
