@@ -26,6 +26,8 @@ github_username:  aroques
 
 # Build settings
 markdown: kramdown
+syntax_highlighter: rouge
+
 # theme: minima
 plugins:
   - jekyll-feed
