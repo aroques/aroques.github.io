@@ -44,3 +44,9 @@ a.navbar-brand {
 h2 {
   font-size: 2.25rem;
 }
+
+pre {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 9.5px;
+}
