@@ -1,6 +1,16 @@
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 150) { // 150 is height of .upper-nav  
+    
+    var upper_nav_height;
+    
+    if (window.innerWidth <= 575.98) {
+        upper_nav_height = 180;
+    }
+    else {
+        upper_nav_height = 150;
+    }
+    
+    if ($(window).scrollTop() >= upper_nav_height) { 
        $('.lower-nav').addClass('fixed-header');
     }
     else {
