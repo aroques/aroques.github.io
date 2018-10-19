@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="blog-logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="-101.91814"
+     inkscape:cy="500.96122"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1293"
+     inkscape:window-height="713"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       id="path3713"
+       cx="116.41666"
+       cy="174.15773"
+       rx="79.375"
+       ry="80.508926"
+       style="stroke-width:0.26458332" />
+    <ellipse
+       style="stroke-width:0.16933332"
+       ry="51.525715"
+       rx="50.799999"
+       cy="174.15773"
+       cx="116.41666"
+       id="ellipse3715" />
+    <ellipse
+       id="ellipse3717"
+       cx="116.41666"
+       cy="174.15773"
+       rx="63.507156"
+       ry="64.414406"
+       style="fill:#ffffff;stroke-width:0.21169052" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3719"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3721"><rect
+           id="rect3723"
+           width="14"
+           height="46"
+           x="350"
+           y="560.51971" /></flowRegion><flowPara
+         id="flowPara3725" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3727"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(2.4594863,0,0,2.7066695,-733.88398,-1471.8655)"><flowRegion
+         id="flowRegion3729"><rect
+           id="rect3731"
+           width="234"
+           height="234"
+           x="324"
+           y="544.51971" /></flowRegion><flowPara
+         id="flowPara3733"
+         style="line-height:3.25">ar</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3735"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3737"><rect
+           id="rect3739"
+           width="428"
+           height="100"
+           x="24"
+           y="588.51971" /></flowRegion><flowPara
+         id="flowPara3741" /></flowRoot>  </g>
+</svg>

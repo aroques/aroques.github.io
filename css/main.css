@@ -4,9 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
 
+/*
+  Header
+*/
 .upper-nav {
+  height: 150px;
   z-index: 1; 
+  padding: 0.5rem 1rem 0rem 1rem;
 }
+
 .lower-nav {
   -webkit-box-shadow: 0 -6px 25px 0px #999;
   -moz-box-shadow: 0 -6px 25px 0px #999;
@@ -15,14 +21,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.portfolio-item {
-  margin-bottom: 30px;
-}
-
-footer {
-  border-top: 1px solid rgba(0,0,0,0.125);
 }
 
 header {
@@ -39,14 +37,40 @@ header {
 a.navbar-brand {
   font-size: 1.7rem;
   font-weight: 500;
+  white-space: normal;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25rem;
 }
 
+/*
+  Footer
+*/
+footer {
+  border-top: 1px solid rgba(0,0,0,0.125);
+}
+
+/*
+  Code blocks
+*/
 pre {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 9.5px;
+}
+
+/*
+  Portfolio page
+*/
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/*
+  Default page _layout
+*/
+.default-page {
+  margin-top: 80px;
 }
