@@ -4,7 +4,7 @@ $(window).scroll(function(){
     var upper_nav_height;
     
     if (window.innerWidth <= 575.98) {
-        upper_nav_height = 180;
+        upper_nav_height = 200;
     }
     else {
         upper_nav_height = 150;
