@@ -23,7 +23,7 @@
     height: 220px;
   }
 
-  .lower-nav {
+  li.nav-item {
     font-size: 1rem; 
   }
 }
