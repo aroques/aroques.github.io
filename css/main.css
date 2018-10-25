@@ -9,18 +9,14 @@
 */
 
 .upper-nav {
-  height: 150px;
+  height: 110px;
   z-index: 1; 
-  padding: 0.5rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 @media (max-width: 575.98px) { 
-  a.navbar-brand {
-    padding: 1rem 0.5rem;
-  }
-  
   .upper-nav {
-    height: 190px;
+    height: 180px;
   }
 
   li.nav-item {
