@@ -9,21 +9,10 @@ title: Blog
   <div class="offset-md-2 col-md-8">
 
     <h2 class="my-4">Recent Posts</h2>
-    
+
     <!-- Recent Posts -->
     {% for post in site.posts %}
-    <div class="card mb-4">
-      <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-      <div class="card-body">
-        <h3 class="card-title">{{ post.title }}</h3>
-        <p class="card-text">{{ post.excerpt }}</p>
-        <a href="{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
-      </div>
-      <div class="card-footer text-muted">
-        Posted on {{ post.date | date: "%B %d, %Y" }} by
-        <a href="#">Start Bootstrap</a>
-      </div>
-    </div>
+      {% include post-card.html %}
     {% endfor %}
 
     <!-- Pagination -->
