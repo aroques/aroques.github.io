@@ -21,16 +21,6 @@ a {
   padding: 1rem 1rem 0rem 1rem;
 }
 
-@media (max-width: 575.98px) { 
-  .upper-nav {
-    height: 180px;
-  }
-
-  li.nav-item {
-    font-size: 1.1rem; 
-  }
-}
-
 .lower-nav {
   -webkit-box-shadow: 0 -6px 25px 0px #999;
   -moz-box-shadow: 0 -6px 25px 0px #999;
@@ -42,13 +32,27 @@ a {
   font-size: 1.2rem;
 }
 
+.xs-nav {
+  -webkit-box-shadow: 0 -6px 25px 0px #999;
+  -moz-box-shadow: 0 -6px 25px 0px #999;
+  box-shadow: 0 -6px 25px 0px #999;
+  font-size: 1.3rem;
+}
+
 header {
   margin-bottom: 20px;
 }
 
+.navbar-toggler {
+  float:right; 
+  overflow: auto; 
+  margin-top:5px
+}
+
 .fixed-header {
   position: fixed;
-  top:0; left:0;
+  top:0; 
+  left:0;
   width: 100%; 
   z-index: 10;
 }

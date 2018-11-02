@@ -7,18 +7,12 @@
 
     {% include header.html %}
 
-    <!-- Page Content -->
     <div class="container default-page">
-        {{ content }}
+      {{ content }}
     </div>
-
-    {% include footer.html %}
 
   </body>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
-  <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="{{ site.url }}/js/persistant-header.js"></script>
+  {% include js_files.html %}
 
 </html>
