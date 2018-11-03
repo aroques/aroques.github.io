@@ -1,10 +1,27 @@
-<li class="nav-item {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
-  <a class="nav-link" href="{{ site.url }}">Home
-    <span class="sr-only">(current)</span>
-  </a>
-</li>
 {% for pg in site.data.pages.pages %}
-<li class="nav-item {% if page.url contains pg.title %}active{% endif %}">
-  <a class="nav-link" href="{{ site.url }}/{{ pg.title }}/">{{ pg.title | capitalize }}</a>
-</li>
+  {% case pg.title %}
+    {% when 'home' %}
+      <li class="nav-item {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">
+        <a class="nav-link" href="{{ site.url }}"> {{ pg.title | capitalize }}
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+    {% when 'blog' %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ pg.title | capitalize }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Recent Posts</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Software Development</a>
+          <a class="dropdown-item" href="#">Fitness</a>
+          <a class="dropdown-item" href="#">Health</a>
+        </div>
+      </li>
+    {% else %}
+      <li class="nav-item {% if page.url contains pg.title %}active{% endif %}">
+        <a class="nav-link" href="{{ site.url }}/{{ pg.title }}/">{{ pg.title | capitalize }}</a>
+      </li>
+  {% endcase %}
 {% endfor %}
