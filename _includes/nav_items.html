@@ -14,9 +14,9 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Recent Posts</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Software Development</a>
-          <a class="dropdown-item" href="#">Fitness</a>
-          <a class="dropdown-item" href="#">Health</a>
+          {% for category in site.data.categories.categories %}
+          <a class="dropdown-item" href="#">{{ category.name }}</a>
+          {% endfor %}
         </div>
       </li>
     {% else %}
