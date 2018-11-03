@@ -62,3 +62,7 @@ pre {
 .default-page {
   margin-top: 70px;
 }
+
+.card-body li {
+  margin-bottom: 4px;
+}
