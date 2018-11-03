@@ -5,27 +5,14 @@ title: Recent Posts
 ---
 <div class="row wrapper">
 
-  <!-- Blog Entries Column -->
   <div class="offset-md-2 col-md-8">
 
     <h2 class="my-4">{{ page.title }}</h2>
     
-    <!-- Recent Posts -->
     {% for post in site.posts %}
       {% include post-card.html %}
     {% endfor %}
 
-    <!-- Pagination -->
-    <ul class="pagination justify-content-center mb-4">
-      <li class="page-item">
-        <a class="page-link" href="#">&larr; Older</a>
-      </li>
-      <li class="page-item disabled">
-        <a class="page-link" href="#">Newer &rarr;</a>
-      </li>
-    </ul>
-
   </div>
 
 </div>
-<!-- /.row -->
