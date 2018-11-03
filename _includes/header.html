@@ -1,26 +1,18 @@
 <header>
-  <!-- Navigation - sm devices and larger -->
-  <nav class="navbar navbar-light bg-light upper-nav d-none d-sm-flex">
-    <a class="navbar-brand mx-auto" href="{{ site.url }}">Alec Roques<br/><small class="text-muted">Thoughts on Software Development, Fitness, Health, and more.</small></a>
-  </nav>
-  <nav class="navbar navbar-expand navbar-light bg-light lower-nav d-none d-sm-flex">
-    <ul class="navbar-nav mx-auto">
-      {% include nav_items.html %}
-    </ul>
-  </nav>
-
-  <!-- Navigation - only visible on xs devices -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light d-block d-sm-none fixed-top xs-nav">
-    <a class="navbar-brand" href="{{ site.url }}">Alec Roques</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        {% include nav_items.html %}
-      </ul>
+  <nav class="navbar fixed-top nav-shadow navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="{{ site.url }}">
+          <img src="/img/logo.png" width="30" height="75%" class="d-inline-block align-top" style="margin-right:10px;" alt="">
+          Alec Roques
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          {% include nav_items.html %}
+      </div>
     </div>
   </nav>
-
 </header>
