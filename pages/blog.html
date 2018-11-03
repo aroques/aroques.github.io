@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: content_w_sidebar
 permalink: /blog/
 title: Blog
 ---
-<div class="row">
 
-  <div class="col-md-8">
+<h2 class="my-4">Recent Posts</h2>
 
-    <h2 class="my-4">Recent Posts</h2>
-
-    {% for post in site.posts %}
-      {% include post-card.html %}
-    {% endfor %}
-
-  </div>
-
-  {% include sidebar.html %}
-
-</div>
+{% for post in site.posts %}
+  {% include post-card.html %}
+{% endfor %}

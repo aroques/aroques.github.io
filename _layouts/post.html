@@ -1,32 +1,21 @@
 ---
-layout: default
+layout: content_w_sidebar
 ---
 
-<div class="row">
+<h2 class="mt-4">{{ page.title }}</h2>
 
-  <!-- Post Content Column -->
-  <div class="col-lg-8">
+<p class="lead">by 
+  {{ page.author }}
+</p>
 
-    <h2 class="mt-4">{{ page.title }}</h2>
+<hr>
 
-    <p class="lead">by 
-      {{ page.author }}
-    </p>
+<p>Posted on {{ page.date | date: "%B %d, %Y" }} at {{ page.date | date: "%I:%M %p" }}</p>
 
-    <hr>
+<hr>
 
-    <p>Posted on {{ page.date | date: "%B %d, %Y" }} at {{ page.date | date: "%I:%M %p" }}</p>
+<img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
 
-    <hr>
+<hr>
 
-    <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
-
-    <hr>
-
-    {{ page.content }}
-
-  </div>
-
-  {% include sidebar.html %}
-
-</div>
+{{ content }}
