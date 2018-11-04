@@ -4,16 +4,18 @@
   {% include head.html %}
 
   <body>
-
     {% include header.html %}
+    
+    <div id="container">
 
-    <div class="container default-page">
-      {{ content }}
+      <div class="container default-page">
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+      
     </div>
-
   </body>
-
-  {% include footer.html %}
 
   {% include js_files.html %}
 
