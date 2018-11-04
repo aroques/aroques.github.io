@@ -26,7 +26,7 @@
             {% for category in site.post_categories %}
             {% if forloop.index == stop_loop %} {% break %} {% endif %}
             <li>
-              <a href="#">{{ category.title }}</a>
+              <a href="{{ site.url }}{{ category.url }}">{{ category.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -35,7 +35,7 @@
           <ul class="list-unstyled mb-0">
             {% for category in site.post_categories offset:num_per_column %}
             <li>
-              <a href="#">{{ category.title }}</a>
+              <a href="{{ site.url }}{{ category.url }}">{{ category.title }}</a>
             </li>
             {% endfor %}
           </ul>
