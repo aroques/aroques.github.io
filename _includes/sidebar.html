@@ -23,19 +23,19 @@
             {% assign num_per_column = 3 %}
             {% assign stop_loop = num_per_column | plus: 1 %}
             
-            {% for category in site.data.categories.categories %}
+            {% for category in site.post_categories %}
             {% if forloop.index == stop_loop %} {% break %} {% endif %}
             <li>
-              <a href="#">{{ category.name }}</a>
+              <a href="#">{{ category.title }}</a>
             </li>
             {% endfor %}
           </ul>
         </div>
         <div class="col-lg-6">
           <ul class="list-unstyled mb-0">
-            {% for category in site.data.categories.categories offset:num_per_column %}
+            {% for category in site.post_categories offset:num_per_column %}
             <li>
-              <a href="#">{{ category.name }}</a>
+              <a href="#">{{ category.title }}</a>
             </li>
             {% endfor %}
           </ul>

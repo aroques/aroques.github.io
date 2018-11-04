@@ -32,6 +32,26 @@ syntax_highlighter: rouge
 plugins:
   - jekyll-feed
 
+collections:
+  post_categories:
+    output: true
+    permalink: /blog/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "post_categories"
+    values:
+      layout: post_by_category
+  
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title
+      author: "Alec Roques"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

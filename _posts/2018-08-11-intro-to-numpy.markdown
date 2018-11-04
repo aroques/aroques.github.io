@@ -1,10 +1,7 @@
 ---
-layout: post
 title:  "Intro to Numerical Computing with NumPy"
 date:   2018-08-11 06:28:00 -0600
 categories: numpy
-permalink: /blog/:year/:month/:day/:title
-author: "Alec Roques"
 ---
 
 
