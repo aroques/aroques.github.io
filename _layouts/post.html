@@ -14,7 +14,14 @@ layout: content_w_sidebar
 
 <hr>
 
-<img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+{% case page.img %}
+  {% when '' %}
+    {% assign imgsrc = 'http://placehold.it/900x300' %}
+  {% else %}
+    {% assign imgsrc = site.url | append: site.post_img_root | append: page.img %}
+{% endcase %}
+
+<img class="img-fluid rounded" src="{{ imgsrc }}" alt="">
 
 <hr>
 

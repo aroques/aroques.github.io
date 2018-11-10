@@ -23,6 +23,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://aroques.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: n/a
 github_username:  aroques
+post_img_root: /img/posts/
 
 # Build settings
 markdown: kramdown
@@ -50,6 +51,7 @@ defaults:
     values:
       layout: post
       permalink: /blog/:year/:month/:day/:title
+      img: ""
       author: "Alec Roques"
 
 # Exclude from processing.

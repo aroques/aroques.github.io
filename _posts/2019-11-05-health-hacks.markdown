@@ -2,6 +2,7 @@
 title:  "Health Hacks"
 date:   2018-11-05 15:30:00 -0600
 modify-date:   2018-11-10 15:30:00 -0600
+img: healthy-man.jpg
 categories: health
 ---
 
