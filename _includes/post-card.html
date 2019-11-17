@@ -1,19 +1,17 @@
 <div class="card mb-4">
+  {% case post.img %} {% when '' %} {% assign imgsrc =
+  'http://placehold.it/750x300' %} {% else %} {% assign imgsrc = site.url |
+  append: site.post_img_root | append: post.img %} {% endcase %}
 
-  {% case post.img %}
-    {% when '' %}
-      {% assign imgsrc = 'http://placehold.it/750x300' %}
-    {% else %}
-      {% assign imgsrc = site.url | append: site.post_img_root | append: post.img %}
-  {% endcase %}
-
-  <img class="card-img-top" src="{{ imgsrc }}" alt="Card image cap">
+  <!-- <img class="card-img-top" src="{{ imgsrc }}" alt="Card image cap"> -->
+  <div class="card-header">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
   <div class="card-body">
-    <a href="{{ post.url }}"><h3 class="card-title">{{ post.title }}</h3></a>
     <p class="card-text">{{ post.excerpt }}</p>
   </div>
   <div class="card-footer text-muted">
-    Posted on {{ post.date | date: "%B %d, %Y" }} by
+    Posted on {{ post.date | date: '%B %d, %Y' }} by
     <a href="{{ site.url }}/about/">{{ post.author }}</a>
   </div>
 </div>
