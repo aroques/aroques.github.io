@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://aroques.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: n/a
-github_username:  aroques
+github_username: aroques
 post_img_root: /img/posts/
 
 # Build settings
@@ -44,7 +44,7 @@ defaults:
       type: "post_categories"
     values:
       layout: post_by_category
-  
+
   - scope:
       path: ""
       type: "posts"
@@ -52,8 +52,7 @@ defaults:
       layout: post
       permalink: /blog/:year/:month/:day/:title
       img: ""
-      author: "Alec Roques"
-
+      author: "Alec"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -1,10 +1,6 @@
-
 pages:
+  - title: home
 
-- title: home
+  - title: blog
 
-- title: blog
-
-- title: portfolio
-
-- title: about
+  - title: about
