@@ -4,25 +4,18 @@ layout: content_w_sidebar
 
 <h2 class="mt-4">{{ page.title }}</h2>
 
-<p class="lead">by 
+<p class="lead">
+  by
   {{ page.author }}
 </p>
 
-<hr>
+<hr />
 
-<p>Posted on {{ page.date | date: "%B %d, %Y" }} at {{ page.date | date: "%I:%M %p" }}</p>
+<p>
+  Posted on {{ page.date | date: '%B %d, %Y' }} at
+  {{ page.date | date: '%I:%M %p' }}
+</p>
 
-<hr>
-
-{% case page.img %}
-  {% when '' %}
-    {% assign imgsrc = 'http://placehold.it/900x300' %}
-  {% else %}
-    {% assign imgsrc = site.url | append: site.post_img_root | append: page.img %}
-{% endcase %}
-
-<img class="img-fluid rounded" src="{{ imgsrc }}" alt="">
-
-<hr>
+<hr />
 
 {{ content }}

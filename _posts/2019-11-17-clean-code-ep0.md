@@ -5,7 +5,9 @@ categories: [clean-code, software development]
 date: 2019-11-17 13:32:00 -0600
 ---
 
-Description of video: This is the keynote Bob Martin gave remotely at ACCU 2011.
+#### Description
+
+This is the keynote Bob Martin gave remotely at ACCU 2011.
 Over the last 50 years we've seen a lot of computer languages, from procedural languages, to structured languages, to OO languages, stack languages, logic languages, and even graphical languages, and languages based on the game of life. We've seen so many different languages, and different types of languages, that we need to ask ourselves a question: have we seen them all?
 
 Are there any more types of languages that we haven't seen? Or have we completely explored the language space? And if we have, then isn't it time we pruned the menagerie of languages down to a manageable few—perhaps even one?
@@ -13,7 +15,9 @@ Other industries have done this, so why not us? Others disciplines have brought 
 
 If we did choose a language, what kind of language would it be? What features would it have?What syntax would it follow? What paradigms would it conform to?
 
-### My Notes
+<!--more-->
+
+#### My Notes
 
 Programming paradigms impose constraints.
 

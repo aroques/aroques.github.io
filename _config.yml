@@ -24,6 +24,7 @@ url: "https://aroques.github.io" # the base hostname & protocol for your site, e
 twitter_username: n/a
 github_username: aroques
 post_img_root: /img/posts/
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
