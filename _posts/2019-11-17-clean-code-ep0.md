@@ -2,7 +2,7 @@
 layout: post
 title: 'Episode 0: The Last Programming Language'
 categories: [clean-code, software development]
-date: 2019-11-17 13:32:00 -0600
+date: 2019-11-17 13:32:00
 ---
 
 #### Description
