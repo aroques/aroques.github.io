@@ -33,3 +33,9 @@ Read on to see list of ideas for SQL posts
 - SELECT INTO is awesome. Is there any cons?
 
 - Can insert results of an STP into a temp table, but need to define the columns first.
+
+- UPDATE FROM is awesome. You can specify the alias after the UPDATE, which I prefer becuase it is easier to understand. You can only update 1 table per UPDATE statement. Same goes for delete. You'll only DELETE records from the 1 table.
+
+- JOIN ordering - how does that work? In a nutshell, a derived table is created which follows the ordering that the tables are specified in.For example: T1, after a join... DT1, after another join... DT2, after the next join.... DT3, amd so on...
+
+- Window functions: they're pretty cool. When to use them? Which ones are most useful?
