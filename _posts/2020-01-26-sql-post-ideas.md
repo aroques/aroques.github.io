@@ -41,3 +41,19 @@ Read on to see list of ideas for SQL posts
 - Window functions: they're pretty cool. When to use them? Which ones are most useful?
 
 - Read execution plans from right to left. Description of symbols you'll see?
+
+- Don't use functions in SELECT list and WHERE clauses. It's freakin' slow.
+
+- CROSS and OUTER APPLY: what's that?
+
+- When to use a CROSS JOIN: whats's that?
+
+- When to use PIVOT: what's that?
+
+- Table-valued functions
+
+- GROUP BY and HAVING
+
+- CASE WHEN statmentss
+
+- Computed columns
