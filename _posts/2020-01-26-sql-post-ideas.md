@@ -27,8 +27,8 @@ Read on to see list of ideas for SQL posts
 
 - Indices
 
-- CTEs vs Sub-querys. Basically I think the perform the same.
-  CTEs should be preferred over temp tables though.
+- CTEs vs Sub-querys. Basically I think they perform the same.
+  CTEs should be preferred over temp tables though. I like CTEs better becuase they can be chained together without excessive/any nesting and they read from top to bottom. They don't have any nesting where subquerys do.
 
 - SELECT INTO is awesome. Is there any cons?
 
