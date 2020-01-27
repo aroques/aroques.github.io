@@ -39,3 +39,5 @@ Read on to see list of ideas for SQL posts
 - JOIN ordering - how does that work? In a nutshell, a derived table is created which follows the ordering that the tables are specified in.For example: T1, after a join... DT1, after another join... DT2, after the next join.... DT3, amd so on...
 
 - Window functions: they're pretty cool. When to use them? Which ones are most useful?
+
+- Read execution plans from right to left. Description of symbols you'll see?
