@@ -25,4 +25,14 @@ So, don't wait! If you want to be a Clean Coder, and if you want to improve your
 
 #### My Notes
 
-- coming soon!
+- Names should reveal intent
+- Avoid disinformation
+- Name should be pronouncable
+- Avoid encodings like Hungarian notation. No need to add prefixes to indicate the type like bIsOpen or p_PrivateMemberVariable. IDEs can handle that now.
+- Classes and varibles are nouns
+- Methods and functions are verbs
+- Booleans should be predicates (ex: isEmpty)
+- The scope rule: variables in short scopes should have short names.
+  In a longer scope? Have a longer name.
+- Public methods should be short since they will be called from different placed and we want calling them to be convenient (private methods can be longer since they will only be called few times and act as good documentation).
+- Same rules apply for public and private class name. Note that derived classes tend to be longer (ex: Savings Account that derives from Account)
