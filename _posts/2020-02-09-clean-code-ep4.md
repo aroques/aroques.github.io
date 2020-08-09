@@ -62,7 +62,8 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 - Switch statements (or long chains of if-else statements) create a fan of dependencys that make independent deployability virtually impossible. Can replace a switch statement (with polymorphism) by making an abstract base class with a method for whatever operation that the switch was performing. Then, you make a inheriting (derived) class for each statement. This inverts the source code dependencys. Typically create those instances in some kind of factory.
 - Switch statements don't cause a problem if they are in a safe independently deployable plug-in module.
 - Main and App partitions. Should be able to draw line between core app functionalilty and Main. Main should be kept small and should point torwards the app - it should plug-in to the app. This is called dependency injection.
-  ![Main and App Partitions](/img/posts/main-and-app-partitions.png 'Main and App Partitions')
+
+![Main and App Partitions](/img/posts/main-and-app-partitions.png 'Main and App Partitions')
 
 - Want a system of independent deployable modules. A system that is independently deployable is also independently developable - teams can work independently.
 - Paradigms: functional, structured, and object-oriented.
