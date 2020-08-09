@@ -87,7 +87,7 @@ void g(); // command, doesn't return a value
 // example of bad command:
 // why does the authorizer return the user?
 // are we supposed to do something with that user?
-User u = authorizer.login(username, passworkd);
+User u = authorizer.login(username, password);
 ```
 
 - Tell, don't ask. Tell objects to do the work, not ask objects what their state is. We don't want to ask an object's state and make decisions on it's behalf. It knows it's own state and can make it's own decisions.
