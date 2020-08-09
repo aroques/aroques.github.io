@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Episode 1: Clean Code'
-categories: [clean-code, software development]
+categories: [clean code, clean code fundamentals, software development]
 date: 2020-01-26 17:32:00
 ---
 

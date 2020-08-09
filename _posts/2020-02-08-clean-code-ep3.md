@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Episode 3: Functions'
-categories: [clean-code, software development]
+categories: [clean code, clean code fundamentals, software development]
 date: 2020-02-08 18:00:00
 ---
 

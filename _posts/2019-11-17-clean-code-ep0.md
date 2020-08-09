@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Episode 0: The Last Programming Language'
-categories: [clean-code, software development]
+categories: [clean code, clean code fundamentals, software development]
 date: 2019-11-17 13:32:00
 ---
 
