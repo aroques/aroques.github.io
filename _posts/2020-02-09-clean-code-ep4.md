@@ -18,6 +18,7 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 <!--more-->
 
 #### My Notes
+
 - How many function arguments? 3 arguments max, fewer are better.
 - If 3 arguments are so cohesive that they can be passed into a function, then why aren't they a class? Bob feels same way about constructor arguments. He'd rather use a bunch of setters (or another guy mentioned using a builder pattern or passing a object/struct).
 - No boolean arguments ever. Your loudly saying this function does 2 things. instead write 2 functions: 1 for the true case and 1 for the false case.
@@ -61,16 +62,18 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 - Switch statements (or long chains of if-else statements) create a fan of dependencys that make independent deployability virtually impossible. Can replace a switch statement (with polymorphism) by making an abstract base class with a method for whatever operation that the switch was performing. Then, you make a inheriting (derived) class for each statement. This inverts the source code dependencys. Typically create those instances in some kind of factory.
 - Switch statements don't cause a problem if they are in a safe independently deployable plug-in module.
 - Main and App partitions. Should be able to draw line between core app functionalilty and Main. Main should be kept small and should point torwards the app - it should plug-in to the app. This is called dependency injection.
+  ![Main and App Partitions](/img/posts/main-and-app-partitions.png 'Main and App Partitions')
+
 - Want a system of independent deployable modules. A system that is independently deployable is also independently developable - teams can work independently.
 - Paradigms: functional, structured, and object-oriented.
 - Functional programming: First to be invented (1957) with LISP. Last to become popular. No assignment statements. Instead of setting value into variables, pass those values as arguments into functions. Instead of looping over variables you recurse thorugh a set of function arguments. Given same input, will always return same output. System state doesn't matter. No side effects.
-- Side Effects: when a function changes system state outside of the function. Makes systems difficult to understand and consistent source of errors. Example, open before close, new before delete. This is called temporal coupling. Can eliminate temporal coupling by 'passing a block': having a function open a file, perform the operation, then close the file. This leaves the system in the same state that it was before. Our goal is not to eliminate side effects, but to impose discipline on where and when they happen. We want to be able to cause side effects like writing to files. 
+- Side Effects: when a function changes system state outside of the function. Makes systems difficult to understand and consistent source of errors. Example, open before close, new before delete. This is called temporal coupling. Can eliminate temporal coupling by 'passing a block': having a function open a file, perform the operation, then close the file. This leaves the system in the same state that it was before. Our goal is not to eliminate side effects, but to impose discipline on where and when they happen. We want to be able to cause side effects like writing to files.
 
 ```
 // 'passing a block' example
 f.open(); // becomes...
 public void open(file f, fileCommand c) {
-    f.open();       
+    f.open();
     c.process(f);
     f.close();
 }
@@ -95,7 +98,7 @@ User u = authorizer.login(username, password);
 ```
 // Example of tell, don't ask
 // worst
-if (user.isLoggedin())  
+if (user.isLoggedin())
     user.execute(command);
 else
     annunciator.promptLogin();
@@ -111,11 +114,12 @@ user.execute(command, annunciator);
 ```
 
 - The Law of Demeter: we want our functions to have limited knowledge of the system. The following code line violates this severely. Law of Demeter is tell don't ask. Formalized as, you may call methods of objects that are:
+
 1. Passed as arguments
 2. Created locally
 3. Instance variables
 4. Globals
-You may not call methods on objects that are return from a previous method call.
+   You may not call methods on objects that are return from a previous method call.
 
 ```
 // violates the law of demeter
@@ -124,7 +128,7 @@ o.getX().getY().getZ().doSomething();
 
 - Structured Programming: the youngest of the three disciplines. OO came second between '62-'66. Structured didn't really come to fruition until Dijikstra published his 'GoTo considered harmful' paper in 1967. Says all algorithims should be composed of three basic operations: sequence, selection, and iteration. Can reason about code sequentially because each of the structures correctness does not depend on any of the others. A system that is provable to be correct, is an understandable system. All structures, algorithms, modules, systems, etc have a single entrance at the top and a single exit at the bottom.
 - Early Returns: at beginning of function is no big deal. Early returns/breaks from loop makes the loop a whole lot more compilcated and harder to understand, so they should be avoided.
-- Error Handling (with Stack Kata as an example): Michael Feathers once wrote: "Error handling is important, but if it obscures logic, it's wrong". 
+- Error Handling (with Stack Kata as an example): Michael Feathers once wrote: "Error handling is important, but if it obscures logic, it's wrong".
 - Errors First: always best to write error-handling code first so you don't end up with an implmentation that cannot handle errors well.
 - Prefer exceptions over returning values. Scope exception to the class that throws it and contain as much info as possible. Don't use checked exceptions - derive exceptions from RuntimeException. Name and context of the exception should be mostly informational enough and shouldn't need a big message, if any.
 - Special cases: Zero capacity stack - used a factory pattern to implement null object pattern and return a ZeroCapacityStack object. Top() should throw an exception, rather than return NULL, since NULL would be unexpected. Find() returns NULL because it is excepted, meaning the value wasn't found.
