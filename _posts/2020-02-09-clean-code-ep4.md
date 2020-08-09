@@ -28,6 +28,7 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 - Switches and Cases:
 - One thing that OO does very well is manage dependencies. See module A calls a function held in module B. So at runtime, A depends on B. Can't deploy seperately. Any change to module B will force a recompile (and redeployment) of module A.
 
+```
                      +------------->
 +------------+    source code dependency   +------------+
 |            |                             |            |
@@ -39,9 +40,11 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 |            |                             |            |
 +------------+     run time dependency     +------------+
                      +------------->
+```
 
 - Having module B inherit from an interface changes the direction of the source code dependency (at least from the perspective of module B). Each module can now be deployed independently. Module A knows nothing of module B. Module B plugs into A. In fact, many different module Bs can plug into A.
 
+```
                      <-------------+
 +------------+    source code dependency   +------------+
 |            |                             |            |
@@ -53,6 +56,7 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 |            |                             |            |
 +------------+     run time dependency     +------------+
                      +------------->
+```
 
 - Switch statements (or long chains of if-else statements) create a fan of dependencys that make independent deployability virtually impossible. Can replace a switch statement by making an abstract base class with a method for whatever operation that the switch was performing. Then, you make a inheriting (derived) class for each statement. This inverts the source code dependencys. Typically create those instances in some kind of factory.
 - Switch statements don't cause a problem if they are in a safe independently deployable plug-in module.
