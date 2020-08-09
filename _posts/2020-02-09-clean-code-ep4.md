@@ -65,6 +65,7 @@ So set aside 90 minutes and get ready for a while ride through some lectures and
 - Paradigms: functional, structured, and object-oriented.
 - Functional programming: First to be invented (1957) with LISP. Last to become popular. No assignment statements. Instead of setting value into variables, pass those values as arguments into functions. Instead of looping over variables you recurse thorugh a set of function arguments. Given same input, will always return same output. System state doesn't matter. No side effects.
 - Side Effects: when a function changes system state outside of the function. Makes systems difficult to understand and consistent source of errors. Example, open before close, new before delete. This is called temporal coupling. Can eliminate temporal coupling by 'passing a block': having a function open a file, perform the operation, then close the file. This leaves the system in the same state that it was before. Our goal is not to eliminate side effects, but to impose discipline on where and when they happen. We want to be able to cause side effects like writing to files. 
+
 ```
 // 'passing a block' example
 f.open(); // becomes...
@@ -74,19 +75,23 @@ public void open(file f, fileCommand c) {
     f.close();
 }
 ```
+
 - Command Query Seperation: successful discipline for managing side effects. A command changes the state of a system - it has a side effect. A query does not. A query returns the state of the system or the value of a computation. A command changes the state of the system and returns nothing. Getters and setters are a good example of this. If a command fails, throw an exception, don't return some error code.
+
 ```
 int f();  // query, returns a value
 void g(); // command, doesn't return a value
-```
 
-```
+
+
+// example of bad command:
 // why does the authorizer return the user?
 // are we supposed to do something with that user?
 User u = authorizer.login(username, passworkd);
 ```
 
 - Tell, don't ask. Tell objects to do the work, not ask objects what their state is. We don't want to ask an object's state and make decisions on it's behalf. It knows it's own state and can make it's own decisions.
+
 ```
 // Example of tell, don't ask
 // worst
@@ -103,7 +108,6 @@ catch(User.NotLoggedIn e)
 
 // best - let user object handle it
 user.execute(command, annunciator);
-
 ```
 
 - The Law of Demeter: we want our functions to have limited knowledge of the system. The following code line violates this severely. Law of Demeter is tell don't ask. Formalized as, you may call methods of objects that are:
@@ -112,10 +116,12 @@ user.execute(command, annunciator);
 3. Instance variables
 4. Globals
 You may not call methods on objects that are return from a previous method call.
+
 ```
 // violates the law of demeter
 o.getX().getY().getZ().doSomething();
 ```
+
 - Structured Programming: the youngest of the three disciplines. OO came second between '62-'66. Structured didn't really come to fruition until Dijikstra published his 'GoTo considered harmful' paper in 1967. Says all algorithims should be composed of three basic operations: sequence, selection, and iteration. Can reason about code sequentially because each of the structures correctness does not depend on any of the others. A system that is provable to be correct, is an understandable system. All structures, algorithms, modules, systems, etc have a single entrance at the top and a single exit at the bottom.
 - Early Returns: at beginning of function is no big deal. Early returns/breaks from loop makes the loop a whole lot more compilcated and harder to understand, so they should be avoided.
 - Error Handling (with Stack Kata as an example): Michael Feathers once wrote: "Error handling is important, but if it obscures logic, it's wrong". 
