@@ -2,7 +2,7 @@
 layout: post
 title: 'Episode 4: Function Stucture'
 categories: [clean code, clean code fundamentals, software development]
-date: 2020-02-09 19:50:00
+date: 2020-08-09 14:24:00
 ---
 
 #### Description
