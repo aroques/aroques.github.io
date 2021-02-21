@@ -28,7 +28,7 @@ On that ride you'll learn why function size is so important to Object-Oriented D
 - Classes tend to hide in large functions
 - A function should do 1 thing
 - First rule of functions is that they are small, second rules is that they are smaller than that
-- Don't worry about the effeciency of function calls
+- Don't worry about the efficiency of function calls
 - 4-6 lines long - no more than 20 lines
 - A class is a group of functions that use a common set of variables
 - A large function is where classes go to hide

@@ -27,11 +27,11 @@ And besides, you don't really want to miss the astronomy lectures, do you?
 
 ##### Does Clean Code matter?
 
-- Sword (C Debugger) company 'killed by bad code'. They rushed on building debugger for C language and could not update it to work for C++ and so the company eventually declared bankruptcy becuase they were losing the C customers as C++ become more popular.
+- Sword (C Debugger) company 'killed by bad code'. They rushed on building debugger for C language and could not update it to work for C++ and so the company eventually declared bankruptcy because they were losing the C customers as C++ become more popular.
 - Brooks law - adding developers doesn't increase productivity (at least not at first)
 - The big redesign in the sky rarely works.
 - A rigid/fragile system is one that resists change because it is one in which to make a change you need to touch many parts of the system, or when one change breaks another part in the system.
-  - Inseperability - when parts cannot be seperated out to be reused
+  - Inseparability - when parts cannot be separated out to be reused
 - Opacity - code that's hard to read, understand, and change
 
 ##### What is clean code?
