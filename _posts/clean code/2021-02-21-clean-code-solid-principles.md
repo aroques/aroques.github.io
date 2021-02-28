@@ -10,14 +10,14 @@ date: 2021-02-21 08:49:00
 - The diagrams are not the design. The source code is the design.
 - Unlike houses or mechanical parts, software is cheap to build and fix or change after the fact. 
 
+<!--more-->
+
 ###### Design Smells 
 - **Rigidity** is the tendency of a system to be hard to change. A system is hard to change when the cost to change the system is high. For instance, a system with a slow 3 hour build time. A change in one module should not force other modules to be rebuilt.
 - **Fragility** is when a small change to one module causes other unrelated modules to misbehave.
 - **Immobility** is when a system's internal components cannot be easily extracted and reused in new environments.
 - **Viscosity** is when necessary operations like building and testing are long and difficult to complete
 - **Needless complexity** is when a system designs for future needs 
-
-<!--more-->
 
 ###### Code Rot
 - **Dependency inversion** is when dependencies oppose the flow of control
@@ -186,7 +186,7 @@ WithdrawalInteractor withdrawalInteractor = new WithdrawalInteractor(messenger, 
 
 ###### Single Responsibility Principle
 - Modules are separated so that they do not violate SRP  
-![Employee Entity SRP](/img/posts/add-employee-entity-srp.png 'Employee Entity SRP)
+![Employee Entity SRP](/img/posts/add-employee-entity-srp.png 'Employee Entity SRP')
 
 ###### Open-Closed Principle
 - The add employee controller doesn't need to be recompiled and redeployed every time a new employee type is added or when the hourly employee request data structure is modified. It's closed for modification, but open for extension.  
@@ -209,7 +209,7 @@ public class AddTimeCardUseCase implements UseCase {
 ![Add Time Card Use Case](/img/posts/add-time-card-use-case.png 'Add Time Card Use Case')
 
 ###### Interface Segregation Principle
-- The request builder and use case factory should use build and make methods to segregate the interfaces (lose some type safety). Or each controller should depend on their own concrete implementation of these interfaces (gain type safety back, but have more interfaces). This way the add employee controller doesn't need to be recompiled and redeployed each time that a use case is added or removed.
+- The request builder and use case factory should use build and make methods to segregate the interfaces (lose some type safety). Or each controller should depend on their own concrete implementation of these interfaces (gain type safety back, but have more interfaces). This way the add employee controller doesn't need to be recompiled and redeployed each time that a use case is added or removed.  
 ![Use Case Request Builder](/img/posts/use-case-request-builder.png 'Use Case Request Builder')
 
 ###### Dependency Inversion Principle
